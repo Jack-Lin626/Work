@@ -63,11 +63,11 @@ bssid / frequency / signal level / flags / ssid
 Next step: adding and setting new network. In this step, the variables you need to set depend on the AP you want to connect. In default, you don't need to set additional variables if your AP correspond to the following table.
 
 | variables | not set for default |
-| --- | ------------------- |
+| --------- | ------------------- |
 | proto | WPA or RSN |
 | key management protocols | WPA-PSK or WPA-EAP |
 | pairwise ciphers for WPA | CCMP or TKIP |
-| group ciphers for WPA  | CCMP or TKIP or WEP104 or WEP40 |
+| group ciphers for WPA | CCMP or TKIP or WEP104 or WEP40 |
 
 From the result of previous action, we know that 94-test-5GHz is WPA RSN, WPA-PSK, CCMP+TKIP. As a result, we don't need to add extra informations in this case.
 The link describes all variables used in wpa_supplicant.
@@ -104,7 +104,16 @@ OK
 > quit
 ```
 
-
+After you enter save_config conmmand, wpa_cli will automatically save the preference to the configuration file. The following is the outcome of the configure file saved in /etc/wpa_supplicant/wpa_supplicant.conf. These messages was generated after you saved network variables in wpa_cli interface.
+```text
+ctrl_interface=DIR=/run/wpa_supplicant 
+update_config=1 
+ 
+network={ 
+        ssid="94-test-5GHz" 
+        psk="12345678" 
+}
+```
 Interfaces setting
 ------------------
 Bringing down wired interface and Bringing up wireless interface
