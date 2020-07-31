@@ -3,7 +3,7 @@ wpa_supplicant user mannual
 
 configure file
 --------------
-You need to edit configure file first before using wpa_supplicant. It need to be execute as root. Frist, create the configure file. You can name it anything ended with .conf.
+You need to edit configure file first before using wpa_supplicant. It needs to be executed as root. Frist, create the configure file. You can name it anything ended with .conf.
 ```text
 moxa@Moxa:~$ sudo -i
 [sudo] password for moxa: 
@@ -19,7 +19,7 @@ wpa_supplicant
 --------------
 Execute the following command. This failure about the board can be ignored.
 ```text
-root@Moxa:~# wpa_supplicant -B -i wlp2s0 -c /etc/wpa_supplicant/wpa_supplicant/conf
+root@Moxa:~# wpa_supplicant -B -i wlp2s0 -c /etc/wpa_supplicant/wpa_supplicant.conf
 Successfully initialized wpa_supplicant
 [  153.295257] ath10k_pci 0000:02:00.0: failed to get board id:-95
 ```
