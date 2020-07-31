@@ -80,7 +80,7 @@ OK
 OK
 ```
 
-Then, checking networks and enable it
+Then, check networks and enable it
 ```text
 > list_networks
 network id / ssid / bssid / flags
