@@ -65,6 +65,8 @@ From the result of previous action, we know that 94-test-5GHz is WPA RSN, WPA-PS
 | pairwise ciphers for WPA | CCMP or TKIP |
 | group ciphers for WPA  | CCMP or TKIP or WEP104 or WEP40 |
 
+From the result of previous action, we know that 94-test-5GHz is WPA RSN, WPA-PSK, CCMP+TKIP. As a result, we don't need to add extra in this case.
+
 The link describes all variables used in wpa_supplicant.
 https://www.daemon-systems.org/man/wpa_supplicant.conf.5.html
 
