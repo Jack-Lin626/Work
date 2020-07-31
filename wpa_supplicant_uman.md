@@ -65,7 +65,7 @@ From the result of previous action, we know that 94-test-5GHz is WPA RSN, WPA-PS
 | pairwise ciphers for WPA | CCMP or TKIP |
 | group ciphers for WPA  | CCMP or TKIP or WEP104 or WEP40 |
 
-From the result of previous action, we know that 94-test-5GHz is WPA RSN, WPA-PSK, CCMP+TKIP. As a result, we don't need to add extra in this case.
+From the result of previous action, we know that 94-test-5GHz is WPA RSN, WPA-PSK, CCMP+TKIP. As a result, we don't need to add extra informations in this case.
 
 The link describes all variables used in wpa_supplicant.
 https://www.daemon-systems.org/man/wpa_supplicant.conf.5.html
@@ -75,7 +75,7 @@ https://www.daemon-systems.org/man/wpa_supplicant.conf.5.html
 0
 > set_network 0 ssid "94-test-5GHz"
 OK
->set_network 0 psk "12345678"
+> set_network 0 psk "12345678"
 OK
 ```
 Then, checking networks and enable it
@@ -98,6 +98,7 @@ network id / ssid / bssid / flags
 0       94-test-5GHz    any     [CURRENT]
 > save_config
 OK
+> q
 ```
 
 Bringing down wired interface and Bringing up wireless interface
@@ -124,7 +125,7 @@ PING google.com (216.58.200.238) 56(84) bytes of date.
 --- google.com ping statistics ---
 3 packets transmitted, 9 received, 0% packet loss, time 3488 ms
 rtt min/avg/max/mdev = 5.789/15.607/53.519/13.871 ms
-root@Moxa:~# wpa_cli
+root@Moxa:~# wpa_cli -i wlp2s0
 > status
 bssid=74:da:da:35:72:6e
 freq=5765
