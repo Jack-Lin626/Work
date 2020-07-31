@@ -17,7 +17,7 @@ update_config=1
 
 wpa_supplicant
 --------------
-Execute the following command. This failure about the board can be ignored.
+Execute the following command. The failure about the board can be ignored.
 ```text
 root@Moxa:~# wpa_supplicant -B -i wlp2s0 -c /etc/wpa_supplicant/wpa_supplicant.conf
 Successfully initialized wpa_supplicant
@@ -55,8 +55,6 @@ bssid / frequency / signal level / flags / ssid
 74:da:da:35:72:6c       2437    -54     [WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][                               WPS][ESS]       94-test
 ```
 Next step: adding and setting new network. In this step, the variables you need to set depend on the AP you want to connect. In default, you don't need to set additional variables if your AP correspond to the following table.
-
-From the result of previous action, we know that 94-test-5GHz is WPA RSN, WPA-PSK, CCMP+TKIP. As a result, we don't need to add extra in this case.
 
 | variables | not set for default |
 | --- | ------------------- |
