@@ -1,4 +1,4 @@
-wpa_supplicant user mannual
+wpa_supplicant user manual
 ===========================
 
 
@@ -26,6 +26,7 @@ root@Moxa:~# wpa_supplicant -B -i wlp2s0 -c /etc/wpa_supplicant/wpa_supplicant.c
 Successfully initialized wpa_supplicant
 [  153.295257] ath10k_pci 0000:02:00.0: failed to get board id:-95
 ```
+
 
 wpa_cli
 -------
