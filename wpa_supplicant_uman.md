@@ -67,6 +67,7 @@ Next step: adding and setting new network. In this step, the variables you need 
 | key management protocols | WPA-PSK or WPA-EAP |
 | pairwise ciphers for WPA | CCMP or TKIP |
 | group ciphers for WPA  | CCMP or TKIP or WEP104 or WEP40 |
+
 From the result of previous action, we know that 94-test-5GHz is WPA RSN, WPA-PSK, CCMP+TKIP. As a result, we don't need to add extra informations in this case.
 The link describes all variables used in wpa_supplicant.
 https://www.daemon-systems.org/man/wpa_supplicant.conf.5.html
