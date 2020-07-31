@@ -99,6 +99,8 @@ OK
 > q
 ```
 
+Interfaces setting
+------------------
 Bringing down wired interface and Bringing up wireless interface
 ```text
 root@MOXA:~# ip link set enp1s0 down
