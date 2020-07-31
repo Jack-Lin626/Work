@@ -131,29 +131,3 @@ root@MOXA:~# dhclient wlp2s0
 If you want to set it mannually, you need to use IP command or see Network Settings.
 
 
-Testing and Result
-------------------
-To verify the connection, you can use ping command and status command in wpa_cli.
-```text
-root@Moxa:~# ping google.com
- (216.58.200.238): icmp_seq=1 ttl=115 time=7.38 ms 
-^c
---- google.com ping statistics ---
-3 packets transmitted, 9 received, 0% packet loss, time 3488 ms
-rtt min/avg/max/mdev = 5.789/15.607/53.519/13.871 ms
-root@Moxa:~# wpa_cli -i wlp2s0
-> status  move to upupupsection
-bssid=74:da:da:35:72:6e
-freq=5765
-ssid=94-test-5GHz
-id=0
-mode=station
-pairwise_cipher=CCMP
-group_cipher=TKIP
-key_mgmt=WPA2-PSK
-wpa_state=COMPLETED
-ip_address=192.168.0.109
-p2p_device_address=00:15:61:20:a2:f9
-address=00:15:61:20:a2:f9
-uuid=06e6bd41-31b2-5725-aea0-9de37e96668f
-```
