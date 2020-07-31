@@ -100,7 +100,7 @@ network id / ssid / bssid / flags
 0       94-test-5GHz    any     [CURRENT]
 > save_config
 OK
-> q
+> quit
 ```
 
 
