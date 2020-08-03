@@ -114,7 +114,7 @@ network={
 ```
 Interfaces setting
 ------------------
-Bringing up wireless interface
+Bringing up wireless interface.
 ```text
 root@MOXA:~# ip link set wlp2s0 up
 ```
@@ -128,6 +128,9 @@ To set IP address automatically, you only need to use dhclient command.
 ```text
 root@MOXA:~# dhclient wlp2s0
 ```
-If you want to set it mannually, you need to use IP command or see Network Settings.
-
+If you want to set it mannually, you need to use IP command or see Network Settings. Replacing 192.168.0.109/24 to your desired IP and subnet-mask. Replacing 192.168.0.1 to your gateway or the IP of your router.
+```text
+root@MOXA:~# ip addr add 192.168.0.109/24 dev wlp2s0
+root@MOXA:~# ip route add default via 192.168.0.1 dev wlp2s0 
+```
 
