@@ -55,8 +55,8 @@ OK
 bssid / frequency / signal level / flags / ssid
 7c:57:3c:2e:d5:f1       5180    -44     [WPA2-EAP-CCMP][ESS]    .M-Mobile
 7c:57:3c:2e:d5:f2       5180    -44     [WPA2-PSK-CCMP][ESS]    .M-Guest
-74:da:da:35:72:6e       5765    -50     [WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][                               WPS][ESS]       94-test-5GHz
-74:da:da:35:72:6c       2437    -54     [WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][                               WPS][ESS]       94-test
+74:da:da:35:72:6e       5765    -50     [WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][WPS][ESS]       94-test-5GHz
+74:da:da:35:72:6c       2437    -54     [WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][WPS][ESS]       94-test
 ```
 
 Next step: adding and setting new network. In this step, the variables you need to set depend on the AP you want to connect. In default, you don't need to set additional variables if your AP correspond to the following table.
