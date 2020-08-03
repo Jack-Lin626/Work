@@ -68,9 +68,11 @@ Next step: adding and setting new network. In this step, the variables you need 
 | pairwise ciphers for WPA | CCMP or TKIP |
 | group ciphers for WPA | CCMP or TKIP or WEP104 or WEP40 |
 
-From the result of previous action, we know that 94-test-5GHz is WPA RSN, WPA-PSK, CCMP+TKIP. As a result, we don't need to add extra informations in this case.
 The link describes all variables used in wpa_supplicant.
 https://www.daemon-systems.org/man/wpa_supplicant.conf.5.html
+
+For instance, you want to connect a network which uses WPA/WPA2 as protocal, CCMP+TKIP as encryption method. Since WPA/WPA2 and CCMP+TKIP are default variables, you only need to set "SSID" and "PSK".
+
 ```text
 > add_network
 0
@@ -128,7 +130,8 @@ To set IP address automatically, you only need to use dhclient command.
 ```text
 root@MOXA:~# dhclient wlp2s0
 ```
-If you want to set it mannually, you need to use IP command or see Network Settings. Replacing 192.168.0.109/24 to your desired IP and subnet-mask. Replacing 192.168.0.1 to your gateway or the IP of your router.
+If you want to set it mannually, you need to use IP command or see Network Settings. For example, if your ip adddes is 192.168.0.109, subnet-mask is 255.255.255.0, and gateway is 192.168.0.1, you can use the following instruction.
+
 ```text
 root@MOXA:~# ip addr add 192.168.0.109/24 dev wlp2s0
 root@MOXA:~# ip route add default via 192.168.0.1 dev wlp2s0 
