@@ -11,7 +11,7 @@ moxa@Moxa:~$ sudo -i
 root@Moxa:~# vim /etc/wpa_supplicant/wpa_supplicant.conf 
 ```
 
-Second, type in these two lines and save it.
+Next, type in these two lines and save it.
 ```text
 ctrl_interface=DIR=/run/wpa_supplicant
 update_config=1
@@ -45,7 +45,7 @@ Interactive mode
 >
 ```
 
-Using scan and scan_result commands to list available APs.
+Use scan and scan_result commands to list available APs.
 ```text
 > scan
 OK
@@ -59,7 +59,7 @@ bssid / frequency / signal level / flags / ssid
 74:da:da:35:72:6c       2437    -54     [WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][WPS][ESS]       94-test
 ```
 
-Next step: adding and setting new network. In this step, the variables you need to set depend on the AP you want to connect. In default, you don't need to set additional variables if your AP correspond to the following table.
+Next step: add and set the new network. In this step, the variables you need to set depend on the AP you want to connect. By default, you don't need to set additional variables if your AP corresponds to the following table.
 
 | variables | not set for default |
 | --------- | ------------------- |
@@ -71,7 +71,7 @@ Next step: adding and setting new network. In this step, the variables you need 
 The link describes all variables used in wpa_supplicant.
 https://www.daemon-systems.org/man/wpa_supplicant.conf.5.html
 
-For instance, you want to connect a network which uses WPA/WPA2 as protocal, CCMP+TKIP as encryption method. Since WPA/WPA2 and CCMP+TKIP are default variables, you only need to set "SSID" and "PSK".
+For instance, you want to connect a network which uses WPA/WPA2 as protocol, CCMP+TKIP as encryption method. Since WPA/WPA2 and CCMP+TKIP are default variables, you only need to set "SSID" and "PSK".
 
 ```text
 > add_network
@@ -124,13 +124,13 @@ root@MOXA:~# ip link set wlp2s0 up
 
 Setting IP address
 ------------------
-After you set up wpa_supplicant, you need to set your ip address. To do this, you have two shoices: manually or automatically.
+After you set up wpa_supplicant, you need to set your IP address. To do this, you have two choices: manually or automatically.
 
 To set IP address automatically, you only need to use dhclient command.  
 ```text
 root@MOXA:~# dhclient wlp2s0
 ```
-If you want to set it mannually, you need to use IP command or see Network Settings. For example, if your ip adddes is 192.168.0.109, subnet-mask is 255.255.255.0, and gateway is 192.168.0.1, you can use the following instruction.
+If you want to set it manually, you need to use IP command or see Network Settings. For example, if your ip address is 192.168.0.109, subnet-mask is 255.255.255.0, and gateway is 192.168.0.1, you can use the following instruction.
 
 ```text
 root@MOXA:~# ip addr add 192.168.0.109/24 dev wlp2s0
