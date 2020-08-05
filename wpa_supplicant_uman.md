@@ -4,7 +4,7 @@ wpa_supplicant user manual
 
 configure file
 --------------
-You need to edit configure file first before using wpa_supplicant. It needs to be executed as root identity. You can name it anything ended with .conf.
+You need to edit configure file first before using wpa_supplicant. It needs to be executed as root identity. You can name it anything ending with .conf.
 ```text
 moxa@Moxa:~$ sudo -i
 [sudo] password for moxa: 
