@@ -124,7 +124,7 @@ root@MOXA:~# ip link set wlp2s0 up
 
 Setting IP address
 ------------------
-After you set up wpa_supplicant, you need to set your IP address. To do this, you have two choices: manually or automatically.
+After setting up wpa_supplicant, the next step is to set up the IP address. To do this, you have two choices: manual or automatic.
 
 To set IP address automatically, you only need to use dhclient command.  
 ```text
