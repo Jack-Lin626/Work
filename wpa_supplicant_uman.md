@@ -104,7 +104,8 @@ OK
 > quit
 ```
 
-After you enter save_config conmmand, wpa_cli will automatically save the preference to the configuration file. The following is the outcome of the configure file saved in /etc/wpa_supplicant/wpa_supplicant.conf. These messages was generated after you saved network variables in wpa_cli interface.
+After you enter save_config command, wpa_cli will automatically save the preference to the configuration file. The following is the outcome of the configure file saved in /etc/wpa_supplicant/wpa_supplicant.conf. These messages were generated after you saved network variables in wpa_cli interface.
+
 ```text
 ctrl_interface=DIR=/run/wpa_supplicant 
 update_config=1 
